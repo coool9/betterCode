@@ -3,7 +3,7 @@
 
 #define SDL_MAIN_HANDLED //reformat code and fix highlighting bugs!!!
 //create constexpr for columnwidth and columnheight
-#include <SDL2-2.0.12/include/SDL.h>
+#include <SDL2/SDL.h>
 #include <immer-0.6.2/immer/flex_vector.hpp>
 #include <vector>
 #include <string>
@@ -82,7 +82,7 @@ bool operator!=(better::Text lhs, better::Text rhs);
 
 }
 
-int WinMain(int argc, char* argv[]) {
+int main(int argc, char* argv[]) {
     SDL_SetMainReady();
     SDL_Init(SDL_INIT_VIDEO);
 
